@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Update_Delete.update_delete">
+
+    <TextView
+        android:id="@+id/userid_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="25dp"
+        android:fontFamily="@font/comfortaa_regular"
+        android:text="Enter User ID"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/enter_user_id"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/userid_title"
+        android:hint="User ID"
+        app:errorContentDescription="Not a valid Email"
+        app:startIconDrawable="@drawable/ic_baseline_person_24"
+        app:hintTextColor="@color/purple_logo"
+        app:errorEnabled="true"
+        app:boxBackgroundColor="@color/white"
+        app:boxStrokeColor="@color/purple_logo"
+        app:boxStrokeWidth="3dp"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="textEmailAddress"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/update_delete_button"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/enter_user_id"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/login_button_background"
+        android:fontFamily="@font/comfortaa"
+        android:padding="5dp"
+        android:text="Button"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <FrameLayout
+        android:id="@+id/update_delete_FrameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="475dp"
+        android:layout_below="@id/update_delete_button"
+        android:layout_marginTop="5dp"
+
+        />
+
+</RelativeLayout>

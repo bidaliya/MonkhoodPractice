@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SplashActivity.SplashActivity">
+
+    <ImageView
+        android:id="@+id/splash_image"
+        android:layout_width="342dp"
+        android:layout_height="322dp"
+        android:layout_marginStart="27sp"
+        android:layout_marginTop="200sp"
+        android:src="@drawable/monkhood" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/splash_image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-134sp"
+        android:fontFamily="@font/raleway"
+        android:text="SPLITWISE CLONE"
+        android:textColor="#4dbad6"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
